@@ -1,0 +1,18 @@
+fun main(){
+    var sphere1 = Sphere(7.0)
+    var cube1 = Cube(5.0)
+    var cylinder1 = cylinder(4.0,8.0)
+    println(sphere1.Volume())
+    println(cylinder1.Volume())
+    println(cube1.Volume())
+
+    fun SumOfVolumes(x:Double = sphere1.Volume(),y:Double= cube1.Volume(),z:Double = cylinder1.Volume()): Double {
+        return x + y + z
+    }
+    println(SumOfVolumes())
+
+
+    var plane1 = Plane(1.0,3.0,5.0)
+    var plane2 = Plane(2.0,3.0,5.0)
+    println(plane1.Angle(plane2))
+}
